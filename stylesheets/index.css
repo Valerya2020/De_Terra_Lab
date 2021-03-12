@@ -2,7 +2,7 @@ body {
   width: 1280px;
   margin: 0;
   padding: 0;
-  background: #2F2D2D;
+  background: #3F7373;
   position: relative;
   height: 800px;
 }
@@ -10,4 +10,15 @@ html {
   background: #bbb;
   position: relative;
   height: 100%;
+}
+#main {
+  
+}
+.device {
+  width: 228px;
+  height: 396px;
+  display: inline-block;
+  position: relative;
+  background-size: contain;
+  background: url('../images/av-body_1280_800.svg');
 }
