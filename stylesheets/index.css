@@ -17,17 +17,87 @@ html {
   position: relative;
   overflow: hidden;
 }
-#content {
-  background: white;
-  height: calc(100% - 20px);
-  position: relative;
-  margin: 10px;
+
+#grid {
+  display: grid;
+  grid-template:
+  "a_device  header  buttons  tubes"      87px
+  "a_device  petri   buttons  tubes"      293px
+  "v_device  petri   buttons  tubes"      61px
+  "v_device  petri   notebook  notebook"  150px
+  "v_device  termo   notebook  notebook"  169px
+  / minmax(219px, 18%)      504px    1fr       3fr
+  ;
+  grid-gap: 0px;
+  height: 100%;
+  margin-top: calc(50vh - 380px);
+  margin-bottom: calc(50vh - 380px);
+  margin-left: 3vw;
+  margin-right: 3vw;
 }
-.device {
-  width: 228px;
-  height: 396px;
-  display: inline-block;
-  position: relative;
+
+.ampermetr {
+  grid-area: a_device;
+  /* background: white; */
+  background: url('../images/av-body_1280_800.png');
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+}
+.voltmetr {
+  grid-area: v_device;
+  /* background: #F36969; */
+  background: url('../images/av-body_1280_800.png');
+  background-size: 100% 100%;
+}
+.header {
+  grid-area: header;
+  background: #BE2A2A;
+  opacity: 10%;
+}
+.petri {
+  grid-area: petri;
+  background: #811212;
+  background: url('../images/cup0.svg');
+  background-size: 100% 100%;
+}
+.termo {
+  grid-area: termo;
+  /* background: #350D0D; */
+  background: url('../images/fire body 1280_800.svg');
+  background-size: 100% 100%;
+}
+.buttons {
+  grid-area: buttons;
+  background: #BD00FF;
+}
+.tubes {
+  grid-area: tubes;
+  /* background: #8CD5FF; */
+  display: grid;
+  grid-template:
+  "probirka1  probirka2 probirka3";
+  grid-template-rows: 100%;
+  grid-template-columns: 104px;
+  grid-gap: calc(50% - 156px);
+}
+.notebook {
+  grid-area: notebook;
+  /* background: #00FFF0; */
+  background: url('../images/note body 1280_800.png');
+  background-size: 100% 100%;
+}
+.probirka {
+  background: url('../images/probirka.svg');
   background-size: contain;
-  background: url('../images/av-body_1280_800.svg');
+  background-repeat: no-repeat;
+  background-position: center;
+}
+#probirka1 {
+  grid-area: probirka1;
+}
+#probirka2 {
+  grid-area: probirka2;
+}
+#probirka3 {
+  grid-area: probirka3;
 }
