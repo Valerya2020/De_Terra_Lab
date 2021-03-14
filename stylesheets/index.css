@@ -68,7 +68,15 @@ html {
 }
 .buttons {
   grid-area: buttons;
-  background: #BD00FF;
+  /* background: #BD00FF; */
+  display: grid;
+  grid-template:
+  "button1"
+  "button2"
+  "button3";
+  grid-template-rows: 75px;
+  grid-template-columns: 100%;
+  grid-gap: calc(50% - 112.5px);
 }
 .tubes {
   grid-area: tubes;
@@ -100,4 +108,10 @@ html {
 }
 #probirka3 {
   grid-area: probirka3;
+}
+.button {
+  background: url('../images/green button1.svg');
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
 }
