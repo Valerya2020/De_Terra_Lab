@@ -42,12 +42,34 @@ html {
   background: url('../images/av-body_1280_800.png');
   background-size: 100% 100%;
   background-repeat: no-repeat;
+  display: grid;
+  grid-template:
+  "logo"
+  "screen"
+  "a-name"
+  "indicate_red_button"
+  "control"
+  "connection_buttons";
+  grid-template-rows: 1fr 89px 1fr 80px 24px 120px;
+  grid-template-columns: 100%;
+  grid-gap: 0px;
 }
 .voltmetr {
   grid-area: v_device;
   /* background: #F36969; */
   background: url('../images/av-body_1280_800.png');
   background-size: 100% 100%;
+  display: grid;
+  grid-template:
+  "logo"
+  "screen"
+  "v-name"
+  "indicate_green_button"
+  "control"
+  "connection_buttons";
+  grid-template-rows: 1fr 89px 1fr 80px 24px 120px;
+  grid-template-columns: 100%;
+  grid-gap: 0px;
 }
 .header {
   grid-area: header;
@@ -65,6 +87,14 @@ html {
   /* background: #350D0D; */
   background: url('../images/fire body 1280_800.svg');
   background-size: 100% 100%;
+  display: grid;
+  grid-template:
+  "termo_control termo_control termo_control"
+  "termo_screen  degree        termo_name"
+  "...           ...           logo";
+  grid-template-rows: 50px 74px 1fr;
+  grid-template-columns: 171px 60px 1fr;
+  grid-gap: 0px;
 }
 .buttons {
   grid-area: buttons;
@@ -93,6 +123,15 @@ html {
   /* background: #00FFF0; */
   background: url('../images/note body 1280_800.png');
   background-size: 100% 100%;
+  display: grid;
+  grid-template:
+  "note_name"
+  "note_body1"
+  "note_body2"
+  "note_button";
+  grid-template-rows: 97px 62px 96px 1fr;
+  grid-template-columns: 100%;
+  grid-gap: 0px;
 }
 .probirka {
   background: url('../images/probirka.svg');
@@ -114,4 +153,135 @@ html {
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center;
+}
+
+.logo {
+  grid-area: logo;
+  background: #00FFF0;
+  opacity: 20%;
+}
+.screen {
+  grid-area: screen;
+  background: url('../images/av-display_1280_800.svg');
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.a-name {
+  grid-area: a-name;
+  background: #00FFF0;
+  opacity: 20%;
+}
+.v-name {
+  grid-area: v-name;
+  background: #00FFF0;
+  opacity: 20%;
+}
+.indicate_red_button {
+  grid-area: indicate_red_button;
+  background: url('../images/red button1.svg');
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.indicate_green_button {
+  grid-area: indicate_green_button;
+  background: url('../images/green button1.svg');
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.control {
+  grid-area: control;
+  background: url('../images/polsunok1.png');
+  background-size: 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+  margin-left: 31px;
+  margin-right: 31px;
+}
+.connection_buttons {
+  grid-area: connection_buttons;
+  padding-left: 22px;
+  padding-right: 22px;
+  display: grid;
+  grid-template:
+  "connection_button1  connection_button2";
+  grid-template-rows: 100%;
+  grid-template-columns: 85px;
+  grid-gap: calc(100% - 170px);
+}
+.a-connection_button {
+  background: url('../images/red button2.svg');
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: top;
+}
+.v-connection_button {
+  background: url('../images/green button2.svg');
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: top;
+}
+
+.termo_control {
+  grid-area: termo_control;
+  background: url('../images/polsunok2.png');
+  background-size: 100%;
+  background-repeat: no-repeat;
+  background-position: bottom;
+  margin-left: 50px;
+  margin-right: 50px;
+}
+.termo_screen {
+  grid-area: termo_screen;
+  background: url('../images/fir display 1280_800 2.svg');
+  background-position: center;
+  margin-left: 50px;
+}
+.degree {
+  grid-area: degree;
+  background: #BF6868;
+  opacity: 20%;
+}
+.termo_name {
+  grid-area: termo_name;
+  background: #EB7D7D;
+  opacity: 20%;
+}
+.note_name {
+  grid-area: note_name;
+  background: #EB7D7D;
+  opacity: 20%;
+}
+.note_body1 {
+  grid-area: note_body1;
+  background: url('../images/note body1 1280_800 1.png');
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+  margin-left: 54px;
+  margin-right: 54px;
+}
+.note_body2 {
+  grid-area: note_body2;
+  background: url('../images/note body2 1280_800 1.png');
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+  margin-left: 54px;
+  margin-right: 54px;
+}
+.note_button {
+  grid-area: note_button;
+  padding-right: 54px;
+}
+.btn {
+  height: 53px;
+  width: 54px;
+  background: url('../images/note button.svg');
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  position: relative;
+  margin-left: calc(100% - 54px)
 }
