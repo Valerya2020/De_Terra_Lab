@@ -92,9 +92,9 @@ html {
   "termo_control termo_control termo_control"
   "termo_screen  degree        termo_name"
   "...           ...           logo";
-  grid-template-rows: 50px 74px 1fr;
+  grid-template-rows: 60px 74px 1fr;
   grid-template-columns: 171px 60px 1fr;
-  grid-gap: 0px;
+  grid-row-gap: 5px;
 }
 .buttons {
   grid-area: buttons;
@@ -249,6 +249,11 @@ html {
   background: #EB7D7D;
   opacity: 20%;
 }
+#termo_logo {
+  position: relative;
+  top: -25px;
+  z-index: 7;
+}
 .note_name {
   grid-area: note_name;
   background: #EB7D7D;
@@ -275,6 +280,9 @@ html {
 .note_button {
   grid-area: note_button;
   padding-right: 54px;
+  position: relative;
+  z-index: 6;
+  top: -12px;
 }
 .btn {
   height: 53px;
