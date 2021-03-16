@@ -10,7 +10,41 @@
 
 /* 1366x768 (MacBook Air ’11.6) */
 @media only screen and (min-width: 1366px) and (max-width: 1439px) {
-
+  #grid {
+    grid-template:
+    "a_device  header  buttons  tubes"      83px
+    "a_device  petri   buttons  tubes"      280px
+    "v_device  petri   buttons  tubes"      58px
+    "v_device  petri   notebook  notebook"  144px
+    "v_device  termo   notebook  notebook"  161px
+    / minmax(209px, 17%)  482px    1fr       3fr
+    ;
+    grid-gap: 0px;
+    height: 100%;
+    margin-top: calc(50vh - 363px);
+    margin-bottom: calc(50vh - 363px);
+    margin-left: 7vw;
+    margin-right: 7vw;
+  }
+  .btn {
+    height: 47px;
+    width: 48px;
+    margin-left: calc(100% - 48px)
+  }
+  .note_body1 {
+    margin-left: 60px;
+    margin-right: 60px;
+  }
+  .note_body2 {
+    margin-left: 60px;
+    margin-right: 60px;
+    padding-left: 11%;
+    padding-right: 11%;
+    padding-top: 5%;
+  }
+  .note_button {
+    padding-right: 60px;
+  }
 }
 
 /* 1280x800 (MacBook Pro ’13) */
@@ -30,5 +64,5 @@
 
 /* 320–475 (iPhone SE) */
 @media only screen and (min-width: 320px) and (max-width: 767px) {
-  
+
 }
