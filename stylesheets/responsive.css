@@ -32,18 +32,18 @@
     margin-left: calc(100% - 48px)
   }
   .note_body1 {
-    margin-left: 60px;
-    margin-right: 60px;
+    margin-left: 57px;
+    margin-right: 57px;
   }
   .note_body2 {
-    margin-left: 60px;
-    margin-right: 60px;
+    margin-left: 57px;
+    margin-right: 57px;
     padding-left: 11%;
     padding-right: 11%;
     padding-top: 5%;
   }
   .note_button {
-    padding-right: 60px;
+    padding-right: 57px;
   }
 }
 
