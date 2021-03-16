@@ -20,6 +20,19 @@
       display: block;
       opacity: .7;
     }
+
+    @font-face {
+    font-family: "GoshaSans-Regular";
+    src: url("../fonts/GoshaSans-Regular.woff") format('woff');
+    font-style: normal;
+    font-weight: normal;
+    }
+    @font-face {
+    font-family: "GoshaSans-Ultralight";
+    src: url("../fonts/GoshaSans-Ultralight.woff") format('woff');
+    font-style: normal;
+    font-weight: lighter;
+    }
     </style>
     <script>
 
@@ -50,7 +63,9 @@
             <div class="v-connection_button connection_button2"></div>
           </div>
         </div>
-        <div class="header"></div>
+        <div class="header">
+          <h1>EVA-RO-h77</h1>
+        </div>
         <div class="petri"></div>
         <div class="termo">
           <div class="termo_control"></div>
@@ -65,9 +80,15 @@
           <div id="button3"class="button"></div>
         </div>
         <div class="tubes">
-          <div id="probirka1"class="probirka"></div>
-          <div id="probirka2"class="probirka"></div>
-          <div id="probirka3"class="probirka"></div>
+          <div id="probirka1"class="probirka">
+            <div id="red_reagent"class="reagent"></div>
+          </div>
+          <div id="probirka2"class="probirka">
+            <div id="green_reagent"class="reagent"></div>
+          </div>
+          <div id="probirka3"class="probirka">
+            <div id="blue_reagent"class="reagent"></div>
+          </div>
         </div>
         <div class="notebook">
           <div class="note_name"></div>

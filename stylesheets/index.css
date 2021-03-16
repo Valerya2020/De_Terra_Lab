@@ -17,6 +17,10 @@ html {
   position: relative;
   overflow: hidden;
 }
+h1 {font-family: "GoshaSans-Regular";
+    font-size: 48px;
+    color: #4BFF6A;
+  }
 
 #grid {
   display: grid;
@@ -73,8 +77,7 @@ html {
 }
 .header {
   grid-area: header;
-  background: #BE2A2A;
-  opacity: 10%;
+  text-align: center;
 }
 .petri {
   grid-area: petri;
@@ -138,6 +141,7 @@ html {
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center;
+  /* padding: 20px; */
 }
 #probirka1 {
   grid-area: probirka1;
@@ -147,6 +151,34 @@ html {
 }
 #probirka3 {
   grid-area: probirka3;
+}
+.reagent {
+  height: 100%;
+  width: 100%;
+}
+#red_reagent {
+  background: url('../images/red_reagent.svg');
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  background-position: bottom;
+  position: relative;
+  bottom: -10px;
+}
+#green_reagent {
+  background: url('../images/green_reagent.svg');
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  background-position: bottom;
+  position: relative;
+  bottom: -10px;
+}
+#blue_reagent {
+  background: url('../images/blue_reagent.svg');
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  background-position: bottom;
+  position: relative;
+  bottom: -10px;
 }
 .button {
   background: url('../images/green button1.svg');
