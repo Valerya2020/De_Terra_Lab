@@ -55,6 +55,7 @@ p {font-family: "GoshaSans-Ultralight";
 
 
 #grid {
+  position: relative;
   display: grid;
   grid-template:
   "a_device  header  buttons  tubes"      87px
@@ -78,6 +79,7 @@ p {font-family: "GoshaSans-Ultralight";
   background: url('../images/av-body_1280_800.png');
   background-size: 100% 100%;
   background-repeat: no-repeat;
+  position: relative;
   display: grid;
   grid-template:
   "logo"
@@ -95,6 +97,7 @@ p {font-family: "GoshaSans-Ultralight";
   /* background: #F36969; */
   background: url('../images/av-body_1280_800.png');
   background-size: 100% 100%;
+  position: relative;
   display: grid;
   grid-template:
   "logo"
@@ -108,16 +111,21 @@ p {font-family: "GoshaSans-Ultralight";
   grid-gap: 0px;
 }
 .header {
+  display: block;
+  position: relative;
   grid-area: header;
   text-align: center;
 }
 .petri {
+  display: block;
+  position: relative;
   grid-area: petri;
   background: #811212;
   background: url('../images/cup0.svg');
   background-size: 100% 100%;
 }
 .termo {
+  position: relative;
   grid-area: termo;
   /* background: #350D0D; */
   background: url('../images/fire body 1280_800.svg');
@@ -132,6 +140,7 @@ p {font-family: "GoshaSans-Ultralight";
   grid-row-gap: 5px;
 }
 .buttons {
+  position: relative;
   grid-area: buttons;
   /* background: #BD00FF; */
   display: grid;
@@ -144,6 +153,7 @@ p {font-family: "GoshaSans-Ultralight";
   grid-gap: calc(50% - 112.5px);
 }
 .tubes {
+  position: relative;
   grid-area: tubes;
   /* background: #8CD5FF; */
   display: grid;
@@ -154,6 +164,7 @@ p {font-family: "GoshaSans-Ultralight";
   grid-gap: calc(50% - 156px);
 }
 .notebook {
+  position: relative;
   grid-area: notebook;
   /* background: #00FFF0; */
   background: url('../images/note body 1280_800.png');
@@ -169,6 +180,8 @@ p {font-family: "GoshaSans-Ultralight";
   grid-gap: 0px;
 }
 .probirka {
+  display: block;
+  position: relative;
   background: url('../images/probirka.svg');
   background-size: contain;
   background-repeat: no-repeat;
@@ -185,6 +198,8 @@ p {font-family: "GoshaSans-Ultralight";
   grid-area: probirka3;
 }
 .reagent {
+  display: block;
+  position: relative;
   height: 100%;
   width: 100%;
 }
@@ -213,6 +228,8 @@ p {font-family: "GoshaSans-Ultralight";
   bottom: -10px;
 }
 .button {
+  display: block;
+  position: relative;
   background: url('../images/green button1.svg');
   background-size: contain;
   background-repeat: no-repeat;
@@ -220,11 +237,16 @@ p {font-family: "GoshaSans-Ultralight";
 }
 
 .logo {
+  display: block;
+  position: relative;
   grid-area: logo;
   text-align: center;
-  padding-top: 7%;
+  /* padding-top: 7%; */
+  vertical-align: baseline;
 }
 .screen {
+  display: block;
+  position: relative;
   grid-area: screen;
   background: url('../images/av-display_1280_800.svg');
   background-size: contain;
@@ -233,22 +255,38 @@ p {font-family: "GoshaSans-Ultralight";
   text-align: center;
 }
 #a-screen{
-  padding-top: 15%;
+  /* padding-top: 15%; */
+  display: grid;
+  grid-template:
+  "as-text";
+  grid-template-rows: 14px;
+  grid-template-columns: 100%;
+  grid-gap: 0px;
 }
 #v-screen{
   padding-top: 3%;
 }
+#as-text {
+  grid-area: as-text;
+  vertical-align: middle;
+}
 .a-name {
+  display: block;
+  position: relative;
   grid-area: a-name;
   text-align: center;
   padding-top: 2%;
 }
 .v-name {
+  display: block;
+  position: relative;
   grid-area: v-name;
   text-align: center;
   padding-top: 2%;
 }
 .indicate_red_button {
+  display: block;
+  position: relative;
   grid-area: indicate_red_button;
   background: url('../images/red button1.svg');
   background-size: contain;
@@ -256,6 +294,8 @@ p {font-family: "GoshaSans-Ultralight";
   background-position: center;
 }
 .indicate_green_button {
+  display: block;
+  position: relative;
   grid-area: indicate_green_button;
   background: url('../images/green button1.svg');
   background-size: contain;
@@ -263,6 +303,8 @@ p {font-family: "GoshaSans-Ultralight";
   background-position: center;
 }
 .control {
+  display: block;
+  position: relative;
   grid-area: control;
   background: url('../images/polsunok1.png');
   background-size: 100%;
@@ -272,6 +314,8 @@ p {font-family: "GoshaSans-Ultralight";
   margin-right: 31px;
 }
 .connection_buttons {
+  display: block;
+  position: relative;
   grid-area: connection_buttons;
   padding-left: 22px;
   padding-right: 22px;
@@ -283,12 +327,16 @@ p {font-family: "GoshaSans-Ultralight";
   grid-gap: calc(100% - 170px);
 }
 .a-connection_button {
+  display: block;
+  position: relative;
   background: url('../images/red button2.svg');
   background-size: contain;
   background-repeat: no-repeat;
   background-position: top;
 }
 .v-connection_button {
+  display: block;
+  position: relative;
   background: url('../images/green button2.svg');
   background-size: contain;
   background-repeat: no-repeat;
@@ -296,6 +344,8 @@ p {font-family: "GoshaSans-Ultralight";
 }
 
 .termo_control {
+  display: block;
+  position: relative;
   grid-area: termo_control;
   background: url('../images/polsunok2.png');
   background-size: 100%;
@@ -305,6 +355,8 @@ p {font-family: "GoshaSans-Ultralight";
   margin-right: 50px;
 }
 .termo_screen {
+  display: block;
+  position: relative;
   grid-area: termo_screen;
   background: url('../images/fir display 1280_800 2.svg');
   background-position: center;
@@ -313,14 +365,19 @@ p {font-family: "GoshaSans-Ultralight";
   padding-top: 6%;
 }
 .degree {
+  display: block;
+  position: relative;
   grid-area: degree;
 }
 .termo_name {
+  display: block;
+  position: relative;
   grid-area: termo_name;
   margin-right: 56px;
   text-align: right;
 }
 #termo_logo {
+  display: block;
   position: relative;
   top: -25px;
   z-index: 7;
@@ -329,11 +386,15 @@ p {font-family: "GoshaSans-Ultralight";
   padding-top: 0px;
 }
 .note_name {
+  display: block;
+  position: relative;
   grid-area: note_name;
   text-align: center;
   padding-top: 10%;
 }
 .note_body1 {
+  display: block;
+  position: relative;
   grid-area: note_body1;
   background: url('../images/note body1 1280_800 1.png');
   background-size: 100% 100%;
@@ -345,6 +406,8 @@ p {font-family: "GoshaSans-Ultralight";
   padding-top: 4%;
 }
 .note_body2 {
+  display: block;
+  position: relative;
   grid-area: note_body2;
   background: url('../images/note body2 1280_800 1.png');
   background-size: 100% 100%;
@@ -357,6 +420,8 @@ p {font-family: "GoshaSans-Ultralight";
   padding-top: 5%;
 }
 .note_button {
+  display: block;
+  position: relative;
   grid-area: note_button;
   padding-right: 54px;
   position: relative;
@@ -364,6 +429,8 @@ p {font-family: "GoshaSans-Ultralight";
   top: -12px;
 }
 .btn {
+  display: block;
+  position: relative;
   height: 53px;
   width: 54px;
   background: url('../images/note button.svg');
