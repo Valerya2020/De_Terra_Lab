@@ -241,7 +241,7 @@ p {font-family: "GoshaSans-Ultralight";
   position: relative;
   grid-area: logo;
   text-align: center;
-  /* padding-top: 7%; */
+  padding-top: 2%;
   vertical-align: baseline;
 }
 .screen {
@@ -253,22 +253,6 @@ p {font-family: "GoshaSans-Ultralight";
   background-repeat: no-repeat;
   background-position: center;
   text-align: center;
-}
-#a-screen{
-  /* padding-top: 15%; */
-  display: grid;
-  grid-template:
-  "as-text";
-  grid-template-rows: 14px;
-  grid-template-columns: 100%;
-  grid-gap: 0px;
-}
-#v-screen{
-  padding-top: 3%;
-}
-#as-text {
-  grid-area: as-text;
-  vertical-align: middle;
 }
 .a-name {
   display: block;
@@ -283,6 +267,22 @@ p {font-family: "GoshaSans-Ultralight";
   grid-area: v-name;
   text-align: center;
   padding-top: 2%;
+}
+#device-text {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  position: absolute;
+  width: 100%;
+}
+#device-text2 {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  height: 100%;
+  position: absolute;
+  width: 100%;
 }
 .indicate_red_button {
   display: block;
@@ -379,7 +379,7 @@ p {font-family: "GoshaSans-Ultralight";
 #termo_logo {
   display: block;
   position: relative;
-  top: -25px;
+  top: -22px;
   z-index: 7;
   text-align: right;
   margin-right: 56px;
