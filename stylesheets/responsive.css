@@ -116,7 +116,37 @@
 
 /* 1024x768 (iPad Landscape) */
 @media only screen and (min-width: 1024px) and (max-width: 1079px) {
-
+  body {
+    width: 1024px;
+    height: 1196px;
+  }
+  #grid {
+    grid-template:
+    "petri     petri      petri     header"     144px
+    "petri     petri      petri     buttons"    75px
+    "petri     petri      petri     tubes"      316px
+    "termo     termo      termo     tubes"      193px
+    "a_device  v_device   notebook  notebook"   305px
+    "a_device  v_device   footer    footer"     123px
+    / 245px    245px      50px       1fr
+    ;
+    height: 100%;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-left: 40px;
+    margin-right: 40px;
+  }
+  .buttons {
+    position: relative;
+    grid-area: buttons;
+    /* background: #BD00FF; */
+    display: grid;
+    grid-template:
+    "button1 button2 button3";
+    grid-template-rows: 100%;
+    grid-template-columns: 75px;
+    grid-gap: calc(50% - 112.5px);
+  }
 }
 
 /* 768x1024 (iPad Portrait) */
