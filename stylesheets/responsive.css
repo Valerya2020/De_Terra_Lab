@@ -1,6 +1,8 @@
 /* 1680x1050 (MacBook Pro ’15.4) */
 @media only screen and (min-width: 1680px) {
-
+  .footer {
+    display: none;
+  }
 }
 
 /* 1440x900 (MacBook Pro ’15) */
@@ -68,6 +70,9 @@
       color: #4BFF6A;
       text-shadow: 0px 0px 10px #4BFF6A;
     }
+    .footer {
+      display: none;
+    }
 }
 
 /* 1366x768 (MacBook Air ’11.6) */
@@ -107,11 +112,16 @@
   .note_button {
     padding-right: 57px;
   }
+  .footer {
+    display: none;
+  }
 }
 
 /* 1280x800 (MacBook Pro ’13) */
 @media only screen and (min-width: 1080px) and (max-width: 1365px) {
-
+  .footer {
+    display: none;
+  }
 }
 
 /* 1024x768 (iPad Landscape) */
@@ -161,5 +171,7 @@
 
 /* 320–475 (iPhone SE) */
 @media only screen and (min-width: 320px) and (max-width: 767px) {
-
+  .footer {
+    display: none;
+  }
 }

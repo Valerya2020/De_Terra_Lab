@@ -440,6 +440,15 @@ p {font-family: "GoshaSans-Ultralight";
   margin-left: calc(100% - 54px)
 }
 .footer_words {
-  display: inline-block;
-  position: relative;
+  display: flex;
+  position: absolute;
+}
+.footer_words1 {
+  right: 0px;
+}
+.footer01 {
+  top: calc(50% - 7px);
+}
+.footer02 {
+  bottom: 0px;
 }
