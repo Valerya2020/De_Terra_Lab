@@ -147,6 +147,11 @@
     grid-template-columns: 75px;
     grid-gap: calc(50% - 112.5px);
   }
+  .footer {
+    display: block;
+    position: relative;
+    grid-area: footer;
+  }
 }
 
 /* 768x1024 (iPad Portrait) */

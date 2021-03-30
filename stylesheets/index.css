@@ -439,3 +439,7 @@ p {font-family: "GoshaSans-Ultralight";
   position: relative;
   margin-left: calc(100% - 54px)
 }
+.footer_words {
+  display: inline-block;
+  position: relative;
+}
