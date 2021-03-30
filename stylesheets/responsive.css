@@ -166,7 +166,49 @@
 
 /* 768x1024 (iPad Portrait) */
 @media only screen and (min-width: 768px) and (max-width: 1023px) {
-
+  body {
+    width: 768px;
+    height: 1452px;
+  }
+  #grid {
+    grid-template:
+    "petri     petri     petri     petri     petri"     518px
+    "header    header    ...       buttons   tubes"    74px
+    "a_device    ...     ...       buttons   tubes"      259px
+    "a_device  termo     termo     termo     termo"      152px
+    "v_device  notebook  notebook  notebook  notebook"   302px
+    "v_device  footer    footer    footer    footer"     107px
+    / 236px    45px      11%       67px      1fr
+    ;
+    height: 100%;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-left: 40px;
+    margin-right: 40px;
+  }
+  .footer {
+    display: block;
+    position: relative;
+    grid-area: footer;
+    align-content: space-between;
+  }
+  .termo {
+    grid-template-rows: 45px 74px 1fr;
+    grid-template-columns: 171px 60px 1fr;
+    grid-row-gap: 5px;
+  }
+  h3 {
+      font-size: 22px;
+    }
+    .footer_words2 {
+      display: none;
+    }
+    .footer_words1 {
+      display: inline-block;
+      position: relative;
+      top: calc(50% - 7px);
+      align-content: space-between;
+    }
 }
 
 /* 320–475 (iPhone SE) */
