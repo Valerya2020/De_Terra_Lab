@@ -269,11 +269,21 @@
     display: none;
   }
   .termo {
-    grid-template-rows: 27px 33px 1fr;
-    grid-template-columns: 84px 30px 1fr;
+    grid-template-rows: 27px 74px 1fr;
+    grid-template-columns: 161px 0px 1fr;
     grid-row-gap: 5px;
   }
   #device-text2 {
     display: none;
+  }
+  .termo_screen {
+    margin-left: 40px;
+  }
+  .termo_control {
+    margin-left: 40px;
+    margin-right: 40px;
+  }
+  #termo_logo {
+    margin-right: 30px;
   }
 }
