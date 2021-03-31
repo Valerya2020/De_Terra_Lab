@@ -243,14 +243,14 @@
 @media only screen and (min-width: 320px) and (max-width: 767px) {
   body {
     width: 100vw;
-    height: 1712px;
+    height: 1692px;
   }
   #grid {
     grid-template:
     "header"   50px
     "petri"    252px
     "tubes"    227px
-    "termo"    144px
+    "termo"    124px
     "a_device" 395px
     "v_device" 395px
     "notebook" 195px
@@ -272,5 +272,8 @@
     grid-template-rows: 27px 33px 1fr;
     grid-template-columns: 84px 30px 1fr;
     grid-row-gap: 5px;
+  }
+  #device-text2 {
+    display: none;
   }
 }
