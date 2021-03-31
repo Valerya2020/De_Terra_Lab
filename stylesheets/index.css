@@ -46,6 +46,12 @@ h6 {font-family: "GoshaSans-Ultralight";
     font-size: 48px;
     color: #4BFF6A;
     text-shadow: 0px 0px 10px #4BFF6A;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    position: absolute;
+    width: 100%;
   }
 p {font-family: "GoshaSans-Ultralight";
     font-size: 14px;
@@ -128,14 +134,14 @@ p {font-family: "GoshaSans-Ultralight";
   position: relative;
   grid-area: termo;
   /* background: #350D0D; */
-  background: url('../images/fire body 1280_800.svg');
+  background: url('../images/fire body 1280_800.png');
   background-size: 100% 100%;
   display: grid;
   grid-template:
   "termo_control termo_control termo_control"
   "termo_screen  degree        termo_name"
   "...           ...           logo";
-  grid-template-rows: 60px 74px 1fr;
+  grid-template-rows: 62px 74px 1fr;
   grid-template-columns: 171px 60px 1fr;
   grid-row-gap: 5px;
 }
@@ -190,12 +196,18 @@ p {font-family: "GoshaSans-Ultralight";
 }
 #probirka1 {
   grid-area: probirka1;
+  max-width: 104px;
+  min-width: 80px;
 }
 #probirka2 {
   grid-area: probirka2;
+  max-width: 104px;
+  min-width: 80px;
 }
 #probirka3 {
   grid-area: probirka3;
+  max-width: 104px;
+  min-width: 80px;
 }
 .reagent {
   display: block;
@@ -362,7 +374,7 @@ p {font-family: "GoshaSans-Ultralight";
   background-position: center;
   margin-left: 50px;
   text-align: center;
-  padding-top: 6%;
+  /* padding-top: 6%; */
 }
 .degree {
   display: block;

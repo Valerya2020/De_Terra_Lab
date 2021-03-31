@@ -118,16 +118,38 @@
 }
 
 /* 1280x800 (MacBook Pro ’13) */
-@media only screen and (min-width: 1080px) and (max-width: 1365px) {
+@media only screen and (min-width: 1280px) and (max-width: 1365px) {
+  body {
+    width: 100vw;
+    height: 100vh;
+  }
+  #grid {
+    position: relative;
+    display: grid;
+    grid-template:
+    "a_device  header  buttons  tubes"      87px
+    "a_device  petri   buttons  tubes"      293px
+    "v_device  petri   buttons  tubes"      61px
+    "v_device  petri   notebook  notebook"  150px
+    "v_device  termo   notebook  notebook"  169px
+    / minmax(219px, 18%)      504px    1fr       3fr
+    ;
+    grid-gap: 0px;
+    height: 100%;
+    margin-top: calc(50vh - 380px);
+    margin-bottom: calc(50vh - 380px);
+    margin-left: 3vw;
+    margin-right: 3vw;
+  }
   .footer {
     display: none;
   }
 }
 
 /* 1024x768 (iPad Landscape) */
-@media only screen and (min-width: 1024px) and (max-width: 1079px) {
+@media only screen and (min-width: 1024px) and (max-width: 1279px) {
   body {
-    width: 1024px;
+    width: 100vw;
     height: 1196px;
   }
   #grid {
@@ -143,8 +165,8 @@
     height: 100%;
     margin-top: 20px;
     margin-bottom: 20px;
-    margin-left: 40px;
-    margin-right: 40px;
+    margin-left: 5%;
+    margin-right: 5%;
   }
   .buttons {
     position: relative;
@@ -167,7 +189,8 @@
 /* 768x1024 (iPad Portrait) */
 @media only screen and (min-width: 768px) and (max-width: 1023px) {
   body {
-    width: 768px;
+    width: 100vw;
+    /* width: 768px; */
     height: 1452px;
   }
   #grid {
@@ -183,14 +206,19 @@
     height: 100%;
     margin-top: 20px;
     margin-bottom: 20px;
-    margin-left: 40px;
-    margin-right: 40px;
+    margin-left: 5%;
+    margin-right: 5%;
   }
   .footer {
     display: block;
     position: relative;
     grid-area: footer;
-    align-content: space-between;
+    display: grid;
+    grid-template:
+    "footer_words1 footer_words1 footer_words1";
+    grid-template-rows: 100%;
+    grid-template-columns: 75px;
+    grid-gap: calc(50% - 112.5px);
   }
   .termo {
     grid-template-rows: 45px 74px 1fr;
@@ -213,6 +241,27 @@
 
 /* 320–475 (iPhone SE) */
 @media only screen and (min-width: 320px) and (max-width: 767px) {
+  body {
+    width: 100vw;
+    height: 1652px;
+  }
+  #grid {
+    grid-template:
+    "header"   50px
+    "petri"    252px
+    "tubes"    227px
+    "termo"    84px
+    "a_device" 395px
+    "v_device" 395px
+    "notebook" 195px
+    / 252px
+    ;
+    height: 100%;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-left: calc(50% - 126px);
+    margin-right: calc(50% - 126px);
+  }
   .footer {
     display: none;
   }
