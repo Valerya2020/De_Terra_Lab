@@ -58,6 +58,9 @@ p {font-family: "GoshaSans-Ultralight";
     color: #4BFF6A;
     text-shadow: 0px 0px 10px #4BFF6A;
   }
+  .note_p {
+    margin-top: 8px;
+  }
 
 
 #grid {
@@ -181,10 +184,26 @@ p {font-family: "GoshaSans-Ultralight";
   "note_body1"
   "note_body2"
   "note_button";
-  grid-template-rows: 97px 62px 96px 1fr;
+  grid-template-rows: 97px 62px 1fr 20%;
   grid-template-columns: 100%;
   grid-gap: 0px;
 }
+.notebook1 {
+  position: relative;
+  grid-area: notebook;
+  /* background: #00FFF0; */
+  background: url('../images/note body 1280_800.png');
+  background-size: 100% 100%;
+  display: grid;
+  grid-template:
+  "note_name"
+  "note_body2"
+  "note_button";
+  grid-template-rows: 97px 1fr 3%;
+  grid-template-columns: 100%;
+  grid-gap: 0px;
+}
+
 .probirka {
   display: block;
   position: relative;
@@ -431,9 +450,16 @@ p {font-family: "GoshaSans-Ultralight";
   position: relative;
   grid-area: note_button;
   padding-right: 54px;
+  padding-left: 54px;
   position: relative;
   z-index: 6;
   top: -12px;
+  display: grid;
+  grid-template:
+  "note_button2 note_button1";
+  grid-template-rows: 100%;
+  grid-template-columns: 54px;
+  grid-gap: calc(100% - 108px);
 }
 .btn {
   display: block;
@@ -443,8 +469,14 @@ p {font-family: "GoshaSans-Ultralight";
   background: url('../images/note button.svg');
   background-size: 100% 100%;
   background-repeat: no-repeat;
-  position: relative;
-  margin-left: calc(100% - 54px)
+  /* margin-left: calc(100% - 54px); */
+}
+.btn1 {
+  grid-area: note_button1;
+}
+.btn2 {
+  background: url('../images/note button2.svg');
+  grid-area: note_button2;
 }
 .footer_words {
   display: flex;
@@ -458,4 +490,7 @@ p {font-family: "GoshaSans-Ultralight";
 }
 .footer02 {
   bottom: 0px;
+}
+.hide {
+  display: none;
 }

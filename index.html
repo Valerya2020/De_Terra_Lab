@@ -34,7 +34,17 @@
     }
     </style>
     <script>
-
+    $(document).ready(function(){
+    	$(".btn1").click(function(){
+    		$(".notebook").addClass("notebook1");
+        $(".note_h40").addClass("hide");
+        $(".note_p0").addClass("hide");
+        $(".notе_body1").addClass("hide");
+        $(".note_h41").removeClass("hide");
+        $(".note_p1").removeClass("hide");
+        $(".btn2").removeClass("hide");
+    	});
+    });
     </script>
   </head>
   <body>
@@ -117,11 +127,14 @@
             <h4>измерение сопротивления плесени</h4>
           </div>
           <div class="note_body2">
-            <h4>цель работы:</h4>
-            <p>научиться выращивать проводник с наименьшим сопротивлением</p>
+            <h4 class="note_h40">цель работы:</h4>
+            <p class="note_p note_p0">научиться выращивать проводник с наименьшим сопротивлением</p>
+            <h4 class="note_h41 hide">приборы и материалы:</h4>
+            <p class="note_p note_p1 hide">споры гибридной плесени EVA-RO-h77, чашка Петри, реагенты в пробирках (TRA-k2011-j6, RFD-u3178-j5, GLA-m1290-j9), горелка, амперметр, вольтметр</p>
           </div>
           <div class="note_button">
-            <div class="btn"></div>
+            <div class="btn btn1"></div>
+            <div class="btn btn2 hide"></div>
           </div>
         </div>
         <div class="footer">
