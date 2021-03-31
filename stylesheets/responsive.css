@@ -16,6 +16,9 @@
     margin-right: 3vw;
     transform: scale(0.8);
   }
+  .hide {
+    display: none;
+  }
 
 }
 /* 1680x1050 (MacBook Pro ’15.4) */

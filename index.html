@@ -37,13 +37,26 @@
     $(document).ready(function(){
     	$(".btn1").click(function(){
     		$(".notebook").addClass("notebook1");
+        $(".notebook").removeClass("notebook");
         $(".note_h40").addClass("hide");
         $(".note_p0").addClass("hide");
-        $(".notе_body1").addClass("hide");
+        $(".notе_body1").addClass("invisable");
         $(".note_h41").removeClass("hide");
         $(".note_p1").removeClass("hide");
         $(".btn2").removeClass("hide");
     	});
+
+      $(".btn2").click(function(){
+    		$(".notebook1").addClass("notebook");
+        $(".notebook1").removeClass("notebook1");
+        $(".note_h40").removeClass("hide");
+        $(".note_p0").removeClass("hide");
+        $(".notе_body1").removeClass("invisable");
+        $(".note_h41").addClass("hide");
+        $(".note_p1").addClass("hide");
+        $(".btn2").addClass("hide");
+    	});
+
     });
     </script>
   </head>

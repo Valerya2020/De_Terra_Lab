@@ -80,6 +80,7 @@ p {font-family: "GoshaSans-Ultralight";
   margin-bottom: calc(50vh - 380px);
   margin-left: 3vw;
   margin-right: 3vw;
+  overflow: hidden;
 }
 
 .ampermetr {
@@ -493,4 +494,7 @@ p {font-family: "GoshaSans-Ultralight";
 }
 .hide {
   display: none;
+}
+.invisable {
+  display: hidden;
 }
