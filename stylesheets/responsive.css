@@ -243,14 +243,14 @@
 @media only screen and (min-width: 320px) and (max-width: 767px) {
   body {
     width: 100vw;
-    height: 1692px;
+    height: 1702px;
   }
   #grid {
     grid-template:
     "header"   50px
     "petri"    252px
     "tubes"    227px
-    "termo"    124px
+    "termo"    134px
     "a_device" 395px
     "v_device" 395px
     "notebook" 195px
@@ -269,21 +269,43 @@
     display: none;
   }
   .termo {
-    grid-template-rows: 27px 74px 1fr;
-    grid-template-columns: 161px 0px 1fr;
-    grid-row-gap: 5px;
+    position: relative;
+    grid-area: termo;
+    /* background: #350D0D; */
+    background: url('../images/fire body 1280_800.png');
+    background-size: 100% 100%;
+    display: grid;
+    grid-template:
+    "termo_control termo_control termo_control"
+    "termo_screen  degree";
+    grid-template-rows: 30px 1fr;
+    grid-template-columns: 171px 1fr 10px;
+    grid-row-gap: 0px;
+    background-repeat: no-repeat;
   }
   #device-text2 {
     display: none;
   }
   .termo_screen {
     margin-left: 40px;
+    background-repeat: no-repeat;
+    background-size: 80% 80%;
   }
   .termo_control {
     margin-left: 40px;
     margin-right: 40px;
+    background-size: 100% 50%;
+    background-position: bottom;
   }
   #termo_logo {
-    margin-right: 30px;
+    display: none;
+  }
+  .degree {
+      display: flex;
+      justify-content: flex-start;
+      align-items: center;
+      height: 100%;
+      position: absolute;
+      width: 100%;
   }
 }
