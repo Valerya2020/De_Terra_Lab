@@ -164,7 +164,7 @@ p {font-family: "GoshaSans-Ultralight";
   /* background: #8CD5FF; */
   display: grid;
   grid-template:
-  "probirka1  probirka2 probirka3";
+  "probirka1 probirka2 probirka3";
   grid-template-rows: 100%;
   grid-template-columns: 104px;
   grid-gap: calc(50% - 156px);
@@ -196,18 +196,12 @@ p {font-family: "GoshaSans-Ultralight";
 }
 #probirka1 {
   grid-area: probirka1;
-  max-width: 104px;
-  min-width: 80px;
 }
 #probirka2 {
   grid-area: probirka2;
-  max-width: 104px;
-  min-width: 80px;
 }
 #probirka3 {
   grid-area: probirka3;
-  max-width: 104px;
-  min-width: 80px;
 }
 .reagent {
   display: block;
@@ -265,6 +259,7 @@ p {font-family: "GoshaSans-Ultralight";
   background-repeat: no-repeat;
   background-position: center;
   text-align: center;
+  padding-bottom: 50px;
 }
 .a-name {
   display: block;
