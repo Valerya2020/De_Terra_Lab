@@ -336,7 +336,9 @@ p {font-family: "GoshaSans-Ultralight";
   place-items: end center;
   height: 0%;
 }
+
 .green_reagent {
+  display: block;
   background: url('../images/green_reagent.svg');
   background-size: 100% 100%;
   background-repeat: no-repeat;
@@ -354,63 +356,70 @@ p {font-family: "GoshaSans-Ultralight";
   background-size: 100% 100%;
   background-repeat: no-repeat;
   place-items: end center;
-  height: 84%;
+  height: 87%;
 }
 .green_reagent_70 {
   background: url('../images/green_reagent_70.svg');
   background-size: 100% 100%;
   background-repeat: no-repeat;
   place-items: end center;
-  height: 74%;
+  height: 80%;
 }
 .green_reagent_60 {
   background: url('../images/green_reagent_60.svg');
   background-size: 100% 100%;
   background-repeat: no-repeat;
   place-items: end center;
-  height: 64%;
+  height: 73%;
 }
 .green_reagent_50 {
-  background: url('../images/green_reagent_70.svg');
+  background: url('../images/green_reagent_50.svg');
   background-size: 100% 100%;
   background-repeat: no-repeat;
   place-items: end center;
-  height: 54%;
+  height: 68%;
 }
 .green_reagent_40 {
-  background: url('../images/green_reagent_70.svg');
+  background: url('../images/green_reagent_40.svg');
   background-size: 100% 100%;
   background-repeat: no-repeat;
   place-items: end center;
-  height: 44%;
+  height: 62%;
 }
 .green_reagent_30 {
-  background: url('../images/green_reagent_70.svg');
+  background: url('../images/green_reagent_30.svg');
   background-size: 100% 100%;
   background-repeat: no-repeat;
   place-items: end center;
-  height: 34%;
+  height: 56%;
 }
 .green_reagent_20 {
-  background: url('../images/green_reagent_70.svg');
+  background: url('../images/green_reagent_20.svg');
   background-size: 100% 100%;
   background-repeat: no-repeat;
   place-items: end center;
-  height: 24%;
+  height: 49%;
 }
 .green_reagent_10 {
-  background: url('../images/green_reagent_70.svg');
+  background: url('../images/green_reagent_10.svg');
   background-size: 100% 100%;
   background-repeat: no-repeat;
   place-items: end center;
-  height: 14%;
+  height: 42%;
 }
 .green_reagent_0 {
   background: url('../images/green_reagent_0.svg');
   background-size: 100% 100%;
   background-repeat: no-repeat;
   place-items: end center;
-  height: 4%;
+  height: 35%;
+}
+.green_reagent_00 {
+  background: url('../images/green_reagent_0.svg');
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  place-items: end center;
+  height: 0%;
 }
 .blue_reagent {
   background: url('../images/blue_reagent.svg');
@@ -430,63 +439,70 @@ p {font-family: "GoshaSans-Ultralight";
   background-size: 100% 100%;
   background-repeat: no-repeat;
   place-items: end center;
-  height: 84%;
+  height: 87%;
 }
 .blue_reagent_70 {
   background: url('../images/blue_reagent_70.svg');
   background-size: 100% 100%;
   background-repeat: no-repeat;
   place-items: end center;
-  height: 74%;
+  height: 80%;
 }
 .blue_reagent_60 {
   background: url('../images/blue_reagent_60.svg');
   background-size: 100% 100%;
   background-repeat: no-repeat;
   place-items: end center;
-  height: 64%;
+  height: 73%;
 }
 .blue_reagent_50 {
-  background: url('../images/blue_reagent_70.svg');
+  background: url('../images/blue_reagent_50.svg');
   background-size: 100% 100%;
   background-repeat: no-repeat;
   place-items: end center;
-  height: 54%;
+  height: 68%;
 }
 .blue_reagent_40 {
-  background: url('../images/blue_reagent_70.svg');
+  background: url('../images/blue_reagent_40.svg');
   background-size: 100% 100%;
   background-repeat: no-repeat;
   place-items: end center;
-  height: 44%;
+  height: 62%;
 }
 .blue_reagent_30 {
-  background: url('../images/blue_reagent_70.svg');
+  background: url('../images/blue_reagent_30.svg');
   background-size: 100% 100%;
   background-repeat: no-repeat;
   place-items: end center;
-  height: 34%;
+  height: 56%;
 }
 .blue_reagent_20 {
-  background: url('../images/blue_reagent_70.svg');
+  background: url('../images/blue_reagent_20.svg');
   background-size: 100% 100%;
   background-repeat: no-repeat;
   place-items: end center;
-  height: 24%;
+  height: 49%;
 }
 .blue_reagent_10 {
-  background: url('../images/blue_reagent_70.svg');
+  background: url('../images/blue_reagent_10.svg');
   background-size: 100% 100%;
   background-repeat: no-repeat;
   place-items: end center;
-  height: 14%;
+  height: 42%;
 }
 .blue_reagent_0 {
   background: url('../images/blue_reagent_0.svg');
   background-size: 100% 100%;
   background-repeat: no-repeat;
   place-items: end center;
-  height: 4%;
+  height: 35%;
+}
+.blue_reagent_00 {
+  background: url('../images/blue_reagent_0.svg');
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  place-items: end center;
+  height: 0%;
 }
 .button {
   display: block;
