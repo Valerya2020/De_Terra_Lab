@@ -16,6 +16,7 @@ html {
   height: 100%;
   position: relative;
   overflow: hidden;
+  padding: 0px;
 }
 h1 {font-family: "GoshaSans-Ultralight";
     font-size: 72px;
@@ -80,7 +81,6 @@ p {font-family: "GoshaSans-Ultralight";
   margin-bottom: calc(50vh - 380px);
   margin-left: 3vw;
   margin-right: 3vw;
-  overflow: hidden;
 }
 
 .ampermetr {
@@ -203,6 +203,7 @@ p {font-family: "GoshaSans-Ultralight";
   grid-template-rows: 97px 1fr 3%;
   grid-template-columns: 100%;
   grid-gap: 0px;
+  overflow: hidden;
 }
 
 .probirka {
