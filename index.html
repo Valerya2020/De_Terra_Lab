@@ -61,15 +61,17 @@
 
       $( function() {
           $( ".termo_control" ).slider({
+
             range: "min",
             value: 10,
             min: 0,
             max: 100,
             slide: function( event, ui ) {
+              console.log("a");
               $( "#amount" ).val( "$" + ui.value );
             }
           });
-          $( "#amount" ).val( "$" + $( ".termo_control" ).slider( "value" ) );
+          $( "#amount" ).val( "0" + $( ".termo_control" ).slider( "value" ) );
         } );
 
     });
@@ -124,7 +126,7 @@
           <div class="termo_screen">
             <h6>
               <label for="amount"></label>
-              <input type="text" id="amount" readonly>
+              <input type="text" id="amount" readonly class="for_h6">
             </h6>
           </div>
           <div class="degree">

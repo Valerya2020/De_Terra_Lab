@@ -54,6 +54,20 @@ h6 {font-family: "GoshaSans-Ultralight";
     position: absolute;
     width: 100%;
   }
+  .for_h6 {
+    font-family: "GoshaSans-Ultralight";
+        font-size: 48px;
+        color: #4BFF6A;
+        text-shadow: 0px 0px 10px #4BFF6A;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100%;
+        position: absolute;
+        width: 100%;
+        background-color: rgba(0, 120, 201, 0);
+        border: 0px;
+  }
 p {font-family: "GoshaSans-Ultralight";
     font-size: 14px;
     color: #4BFF6A;
@@ -213,7 +227,6 @@ p {font-family: "GoshaSans-Ultralight";
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center;
-  /* padding: 20px; */
 }
 #probirka1 {
   grid-area: probirka1;
@@ -226,33 +239,241 @@ p {font-family: "GoshaSans-Ultralight";
 }
 .reagent {
   display: block;
-  position: relative;
+  position: absolute;
   height: 100%;
   width: 100%;
+  bottom: -10px;
+  /* left: -2px; */
+  vertical-align: bottom;
 }
 #red_reagent {
+  display: block;
   background: url('../images/red_reagent.svg');
   background-size: 100% 100%;
   background-repeat: no-repeat;
   place-items: end center;
-  position: relative;
-  bottom: -10px;
+}
+.red_reagent_90 {
+  background: url('../images/red_reagent_90.svg');
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  place-items: end center;
+  height: 94%;
+}
+.red_reagent_80 {
+  background: url('../images/red_reagent_80.svg');
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  place-items: end center;
+  height: 84%;
+}
+.red_reagent_70 {
+  background: url('../images/red_reagent_70.svg');
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  place-items: end center;
+  height: 74%;
+}
+.red_reagent_60 {
+  background: url('../images/red_reagent_60.svg');
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  place-items: end center;
+  height: 64%;
+}
+.red_reagent_50 {
+  background: url('../images/red_reagent_70.svg');
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  place-items: end center;
+  height: 54%;
+}
+.red_reagent_40 {
+  background: url('../images/red_reagent_70.svg');
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  place-items: end center;
+  height: 44%;
+}
+.red_reagent_30 {
+  background: url('../images/red_reagent_70.svg');
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  place-items: end center;
+  height: 34%;
+}
+.red_reagent_20 {
+  background: url('../images/red_reagent_70.svg');
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  place-items: end center;
+  height: 24%;
+}
+.red_reagent_10 {
+  background: url('../images/red_reagent_70.svg');
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  place-items: end center;
+  height: 14%;
+}
+.red_reagent_0 {
+  background: url('../images/red_reagent_0.svg');
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  place-items: end center;
+  height: 4%;
 }
 #green_reagent {
   background: url('../images/green_reagent.svg');
   background-size: 100% 100%;
   background-repeat: no-repeat;
   place-items: end center;
-  position: relative;
-  bottom: -10px;
+}
+.green_reagent_90 {
+  background: url('../images/green_reagent_90.svg');
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  place-items: end center;
+  height: 94%;
+}
+.green_reagent_80 {
+  background: url('../images/green_reagent_80.svg');
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  place-items: end center;
+  height: 84%;
+}
+.green_reagent_70 {
+  background: url('../images/green_reagent_70.svg');
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  place-items: end center;
+  height: 74%;
+}
+.green_reagent_60 {
+  background: url('../images/green_reagent_60.svg');
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  place-items: end center;
+  height: 64%;
+}
+.green_reagent_50 {
+  background: url('../images/green_reagent_70.svg');
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  place-items: end center;
+  height: 54%;
+}
+.green_reagent_40 {
+  background: url('../images/green_reagent_70.svg');
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  place-items: end center;
+  height: 44%;
+}
+.green_reagent_30 {
+  background: url('../images/green_reagent_70.svg');
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  place-items: end center;
+  height: 34%;
+}
+.green_reagent_20 {
+  background: url('../images/green_reagent_70.svg');
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  place-items: end center;
+  height: 24%;
+}
+.green_reagent_10 {
+  background: url('../images/green_reagent_70.svg');
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  place-items: end center;
+  height: 14%;
+}
+.green_reagent_0 {
+  background: url('../images/green_reagent_0.svg');
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  place-items: end center;
+  height: 4%;
 }
 #blue_reagent {
   background: url('../images/blue_reagent.svg');
   background-size: 100% 100%;
   background-repeat: no-repeat;
   place-items: end center;
-  position: relative;
-  bottom: -10px;
+}
+.blue_reagent_90 {
+  background: url('../images/blue_reagent_90.svg');
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  place-items: end center;
+  height: 94%;
+}
+.blue_reagent_80 {
+  background: url('../images/blue_reagent_80.svg');
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  place-items: end center;
+  height: 84%;
+}
+.blue_reagent_70 {
+  background: url('../images/blue_reagent_70.svg');
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  place-items: end center;
+  height: 74%;
+}
+.blue_reagent_60 {
+  background: url('../images/blue_reagent_60.svg');
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  place-items: end center;
+  height: 64%;
+}
+.blue_reagent_50 {
+  background: url('../images/blue_reagent_70.svg');
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  place-items: end center;
+  height: 54%;
+}
+.blue_reagent_40 {
+  background: url('../images/blue_reagent_70.svg');
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  place-items: end center;
+  height: 44%;
+}
+.blue_reagent_30 {
+  background: url('../images/blue_reagent_70.svg');
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  place-items: end center;
+  height: 34%;
+}
+.blue_reagent_20 {
+  background: url('../images/blue_reagent_70.svg');
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  place-items: end center;
+  height: 24%;
+}
+.blue_reagent_10 {
+  background: url('../images/blue_reagent_70.svg');
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  place-items: end center;
+  height: 14%;
+}
+.blue_reagent_0 {
+  background: url('../images/blue_reagent_0.svg');
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  place-items: end center;
+  height: 4%;
 }
 .button {
   display: block;
