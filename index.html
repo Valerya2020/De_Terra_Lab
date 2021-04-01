@@ -59,6 +59,7 @@
         $(".note_body2").removeClass("note_body2_2");
     	});
 
+
       $( function() {
           $( ".termo_control" ).slider({
 
@@ -68,11 +69,87 @@
             max: 100,
             slide: function( event, ui ) {
               console.log("a");
-              $( "#amount" ).val( "$" + ui.value );
+              $( "#amount" ).val( "0" + ui.value );
             }
           });
           $( "#amount" ).val( "0" + $( ".termo_control" ).slider( "value" ) );
         } );
+
+
+        $( function() {
+          let count_1 = 0;
+         $("#button1, #probirka1").click(function() {
+          $(".glass_dialogue_red").removeClass("hide");
+
+          $(".cancel").click(function() {
+           $(".glass_dialogue_red").addClass("hide");
+           });
+
+           $(".add").click(function() {
+             count_1 += 1;
+             if (count_1 == 1) {
+            $(".glass_dialogue_red").addClass("hide");
+            $(".red_reagent").addClass("red_reagent_90");
+            $(".red_reagent").removeClass("red_reagent");
+          }
+          if (count_1 == 3) {
+          $(".glass_dialogue_red").addClass("hide");
+          $(".red_reagent_90").addClass("red_reagent_80");
+          $(".red_reagent_90").removeClass("red_reagent_90");
+          }
+          if (count_1 == 5) {
+          $(".glass_dialogue_red").addClass("hide");
+          $(".red_reagent_80").addClass("red_reagent_70");
+          $(".red_reagent_80").removeClass("red_reagent_80");
+          }
+          if (count_1 == 9) {
+          $(".glass_dialogue_red").addClass("hide");
+          $(".red_reagent_70").addClass("red_reagent_60");
+          $(".red_reagent_70").removeClass("red_reagent_70");
+          }
+          if (count_1 == 13) {
+          $(".glass_dialogue_red").addClass("hide");
+          $(".red_reagent_60").addClass("red_reagent_50");
+          $(".red_reagent_60").removeClass("red_reagent_60");
+          }
+          if (count_1 == 21) {
+          $(".glass_dialogue_red").addClass("hide");
+          $(".red_reagent_50").addClass("red_reagent_40");
+          $(".red_reagent_50").removeClass("red_reagent_50");
+          }
+          if (count_1 == 28) {
+          $(".glass_dialogue_red").addClass("hide");
+          $(".red_reagent_40").addClass("red_reagent_30");
+          $(".red_reagent_40").removeClass("red_reagent_40");
+          }
+          if (count_1 == 38) {
+          $(".glass_dialogue_red").addClass("hide");
+          $(".red_reagent_30").addClass("red_reagent_20");
+          $(".red_reagent_30").removeClass("red_reagent_30");
+          }
+          if (count_1 == 50) {
+          $(".glass_dialogue_red").addClass("hide");
+          $(".red_reagent_20").addClass("red_reagent_10");
+          $(".red_reagent_20").removeClass("red_reagent_20");
+          }
+          if (count_1 == 61) {
+          $(".glass_dialogue_red").addClass("hide");
+          $(".red_reagent_10").addClass("red_reagent_0");
+          $(".red_reagent_10").removeClass("red_reagent_10");
+          }
+          if (count_1 == 72) {
+          $(".glass_dialogue_red").addClass("hide");
+          $(".red_reagent_0").addClass("red_reagent_00");
+          $(".red_reagent_0").removeClass("red_reagent_0");
+          }
+          if (count_1 >= 83) {
+          $(".glass_dialogue_red").addClass("hide");
+          }
+            });
+
+          });
+
+          } );
 
     });
     </script>
@@ -170,13 +247,13 @@
         </div>
         <div class="tubes">
           <div id="probirka1"class="probirka">
-            <div id="red_reagent"class="reagent"></div>
+            <div class="red_reagent reagent"></div>
           </div>
           <div id="probirka2"class="probirka">
-            <div id="green_reagent"class="reagent"></div>
+            <div class="green_reagent reagent"></div>
           </div>
           <div id="probirka3"class="probirka">
-            <div id="blue_reagent"class="reagent"></div>
+            <div class=" blue_reagent reagent"></div>
           </div>
         </div>
         <div class="notebook">

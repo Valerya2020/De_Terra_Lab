@@ -399,7 +399,7 @@
       }
 }
 
-@media only screen and (min-height: 700px) and (max-height: 950px) {
+@media only screen and (min-height: 750px) and (max-height: 800px) {
   #grid {
     grid-template:
     "a_device  header  buttons  tubes"      99px
@@ -417,9 +417,6 @@
     margin-right: 3vw;
     transform: scale(0.8);
     /* min-width: 0; */
-  }
-  .hide {
-    display: none;
   }
 
 }

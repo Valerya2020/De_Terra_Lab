@@ -67,10 +67,11 @@ h6 {font-family: "GoshaSans-Ultralight";
         justify-content: center;
         align-items: center;
         height: 100%;
-        position: absolute;
+        position: relative;
         width: 100%;
         background-color: rgba(0, 120, 201, 0);
         border: 0px;
+        text-align: center;
   }
 p {font-family: "GoshaSans-Ultralight";
     font-size: 14px;
@@ -80,6 +81,7 @@ p {font-family: "GoshaSans-Ultralight";
   .note_p {
     margin-top: 8px;
   }
+
 
 
 #grid {
@@ -250,7 +252,7 @@ p {font-family: "GoshaSans-Ultralight";
   /* left: -2px; */
   vertical-align: bottom;
 }
-#red_reagent {
+.red_reagent {
   display: block;
   background: url('../images/red_reagent.svg');
   background-size: 100% 100%;
@@ -269,65 +271,72 @@ p {font-family: "GoshaSans-Ultralight";
   background-size: 100% 100%;
   background-repeat: no-repeat;
   place-items: end center;
-  height: 84%;
+  height: 87%;
 }
 .red_reagent_70 {
   background: url('../images/red_reagent_70.svg');
   background-size: 100% 100%;
   background-repeat: no-repeat;
   place-items: end center;
-  height: 74%;
+  height: 80%;
 }
 .red_reagent_60 {
   background: url('../images/red_reagent_60.svg');
   background-size: 100% 100%;
   background-repeat: no-repeat;
   place-items: end center;
-  height: 64%;
+  height: 73%;
 }
 .red_reagent_50 {
-  background: url('../images/red_reagent_70.svg');
+  background: url('../images/red_reagent_50.svg');
   background-size: 100% 100%;
   background-repeat: no-repeat;
   place-items: end center;
-  height: 54%;
+  height: 68%;
 }
 .red_reagent_40 {
-  background: url('../images/red_reagent_70.svg');
+  background: url('../images/red_reagent_40.svg');
   background-size: 100% 100%;
   background-repeat: no-repeat;
   place-items: end center;
-  height: 44%;
+  height: 62%;
 }
 .red_reagent_30 {
-  background: url('../images/red_reagent_70.svg');
+  background: url('../images/red_reagent_30.svg');
   background-size: 100% 100%;
   background-repeat: no-repeat;
   place-items: end center;
-  height: 34%;
+  height: 56%;
 }
 .red_reagent_20 {
-  background: url('../images/red_reagent_70.svg');
+  background: url('../images/red_reagent_20.svg');
   background-size: 100% 100%;
   background-repeat: no-repeat;
   place-items: end center;
-  height: 24%;
+  height: 49%;
 }
 .red_reagent_10 {
-  background: url('../images/red_reagent_70.svg');
+  background: url('../images/red_reagent_10.svg');
   background-size: 100% 100%;
   background-repeat: no-repeat;
   place-items: end center;
-  height: 14%;
+  height: 42%;
 }
 .red_reagent_0 {
   background: url('../images/red_reagent_0.svg');
   background-size: 100% 100%;
   background-repeat: no-repeat;
   place-items: end center;
-  height: 4%;
+  height: 35%;
 }
-#green_reagent {
+.red_reagent_00 {
+  background: url('../images/red_reagent_0.svg');
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  place-items: end center;
+  height: 0%;
+}
+.green_reagent {
   background: url('../images/green_reagent.svg');
   background-size: 100% 100%;
   background-repeat: no-repeat;
@@ -403,7 +412,7 @@ p {font-family: "GoshaSans-Ultralight";
   place-items: end center;
   height: 4%;
 }
-#blue_reagent {
+.blue_reagent {
   background: url('../images/blue_reagent.svg');
   background-size: 100% 100%;
   background-repeat: no-repeat;
@@ -816,4 +825,7 @@ p {font-family: "GoshaSans-Ultralight";
   background-repeat: no-repeat;
   right: 40px;
   top: 30px;
+}
+.hide {
+  display: none;
 }
