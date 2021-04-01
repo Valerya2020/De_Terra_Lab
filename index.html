@@ -6,6 +6,8 @@
       <link rel="stylesheet" href="stylesheets/style.css">
     <title></title>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
     <style media="screen">
     body::before {
       content: "";
@@ -57,6 +59,19 @@
         $(".note_body2").removeClass("note_body2_2");
     	});
 
+      $( function() {
+          $( ".termo_control" ).slider({
+            range: "min",
+            value: 10,
+            min: 0,
+            max: 100,
+            slide: function( event, ui ) {
+              $( "#amount" ).val( "$" + ui.value );
+            }
+          });
+          $( "#amount" ).val( "$" + $( ".termo_control" ).slider( "value" ) );
+        } );
+
     });
     </script>
   </head>
@@ -107,7 +122,10 @@
             <span tabindex="0" class="t-slider_span" style="left: 5.15021%;"></span>
           </div>
           <div class="termo_screen">
-            <h6>00</h6>
+            <h6>
+              <label for="amount"></label>
+              <input type="text" id="amount" readonly>
+            </h6>
           </div>
           <div class="degree">
             <h3 id="device-text">°C</h3>
