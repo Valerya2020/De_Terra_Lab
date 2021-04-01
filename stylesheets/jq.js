@@ -31,10 +31,10 @@ $(document).ready(function(){
         max: 100,
         slide: function( event, ui ) {
           console.log("a");
-          $( "#amount" ).val( "0" + ui.value );
+          $( "#amount" ).val(ui.value );
         }
       });
-      $( "#amount" ).val( "0" + $( ".termo_control" ).slider( "value" ) );
+      $( "#amount" ).val( $( ".termo_control" ).slider( "value" ) );
     } );
 
 
