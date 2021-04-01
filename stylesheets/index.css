@@ -54,6 +54,10 @@ h6 {font-family: "GoshaSans-Ultralight";
     position: absolute;
     width: 100%;
   }
+  h7 {font-family: "GoshaSans-Regular";
+      font-size: 24px;
+      color: #D1E8E8;
+    }
   .for_h6 {
     font-family: "GoshaSans-Ultralight";
         font-size: 48px;
@@ -754,4 +758,62 @@ p {font-family: "GoshaSans-Ultralight";
 }
 .invisable {
   display: hidden;
+}
+.glass_dialogue {
+  display: block;
+  position: absolute;
+  border-radius: 60px;
+  width: 500px;
+  height: 282px;
+  background: rgba(215, 234, 218, 0.3);
+  border: 1px solid #87B4A3;
+  box-sizing: border-box;
+  /* background: url('../images/glass1.png');
+  background-size: 100% 100%;
+  background-repeat: no-repeat; */
+  /* background: white; */
+  backdrop-filter: blur(8px);
+  /* border-radius: 60px;
+  opacity: 70%; */
+  z-index: 30;
+  margin-top: 3vh;
+  margin-left: calc(50% - 250px);
+  text-align: center;
+}
+.text_glass {
+  display: block;
+  position: absolute;
+  margin: 80px;
+
+}
+.add {
+  display: block;
+  position: absolute;
+  width: 161px;
+  height: 60px;
+  background: url('../images/glass_btn.svg');
+  -webkit-backdrop-filter: blur(10px);
+  background-repeat: no-repeat;
+  right: 70px;
+  bottom: 30px;
+  vertical-align: baseline;
+  text-align: center;
+}
+.text_btn_glass {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  position: absolute;
+  width: 100%;
+}
+.cancel {
+  display: block;
+  position: absolute;
+  width: 32px;
+  height: 32px;
+  background: url('../images/cancel.svg');
+  background-repeat: no-repeat;
+  right: 40px;
+  top: 30px;
 }
