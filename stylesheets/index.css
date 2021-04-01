@@ -381,6 +381,35 @@ p {font-family: "GoshaSans-Ultralight";
   background-position: bottom;
   margin-left: 50px;
   margin-right: 50px;
+  padding-top: 5%;
+  padding-bottom: 1.5%;
+  padding-left: 3%;
+  padding-right: 3%;
+}
+.green-line {
+  height: 5px;
+  width: 100%;
+  bottom: 10px;
+  background: #4BFF6A;
+  border-radius: 35%;
+  position: absolute;
+  z-index: 1;
+  display: block;
+  box-shadow: 0px 0px 10px #4BFF6A;
+}
+.t-slider_span {
+  height: 27px;
+  width: 27px;
+  background: url('../images/span_control.png');
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  background-position: bottom;
+  bottom: -2px;
+  position: absolute;
+  z-index: 2;
+  cursor: default;
+  -ms-touch-action: none;
+  touch-action: none;
 }
 .termo_screen {
   display: block;
