@@ -23,19 +23,24 @@ $(document).ready(function(){
 
 
   $( function() {
-      $( ".termo_control" ).slider({
+function draw(value) {
+$("#amount").val(value);
+$(".t-green_line").css("width", value + '%');
+$(".t-slider_span").css("left", value + '%');
+};
 
-        range: "min",
-        value: 10,
-        min: 0,
-        max: 100,
-        slide: function( event, ui ) {
-          console.log("a");
-          $( "#amount" ).val( ui.value );
-        }
-      });
-      $( "#amount" ).val( $( ".termo_control" ).slider( "value" ) );
-    } );
+$(".termo_control").slider({
+range: "min",
+value: 18,
+min: 0,
+max: 100,
+slide: function(event, ui) {
+draw(ui.value);
+}
+});
+
+draw($(".termo_control").slider("value"));
+} );
 
 
     $( function() {
