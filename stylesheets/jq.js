@@ -31,7 +31,7 @@ $(document).ready(function(){
         max: 100,
         slide: function( event, ui ) {
           console.log("a");
-          $( "#amount" ).val(ui.value );
+          $( "#amount" ).val( ui.value );
         }
       });
       $( "#amount" ).val( $( ".termo_control" ).slider( "value" ) );
