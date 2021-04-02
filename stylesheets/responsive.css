@@ -282,6 +282,9 @@
       top: calc(50% - 7px);
       align-content: space-between;
     }
+    .plesen {
+      left: 21%;
+    }
 }
 
 /* 320–475 (iPhone SE) */
