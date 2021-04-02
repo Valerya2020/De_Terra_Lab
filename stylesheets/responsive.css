@@ -438,6 +438,72 @@
       .btn {
         display: none;
       }
+      .spora1 {
+        display: block;
+        position: absolute;
+        background: url('../images/spora1.svg');
+        height: 50px;
+        width: 50px;
+        background-repeat: no-repeat;
+        background-size: 100% 100%;
+        left: 20%;
+        top: 20%;
+      }
+      .spora2 {
+        display: block;
+        position: absolute;
+        background: url('../images/spora2.svg');
+        height: 35px;
+        width: 35px;
+        background-repeat: no-repeat;
+        background-size: 100% 100%;
+        left: 30%;
+        top: 25%;
+      }
+      .spora3 {
+        display: block;
+        position: absolute;
+        background: url('../images/spora3.svg');
+        height: 20px;
+        width: 20px;
+        background-repeat: no-repeat;
+        background-size: 100% 100%;
+        left: 50%;
+        top: 55%;
+      }
+      .spora4 {
+        display: block;
+        position: absolute;
+        background: url('../images/spora4.svg');
+        height: 20px;
+        width: 20px;
+        background-repeat: no-repeat;
+        background-size: 100% 100%;
+        left: 50%;
+        top: 35%;
+      }
+      .spora5 {
+        display: block;
+        position: absolute;
+        background: url('../images/spora5.svg');
+        height: 20px;
+        width: 20px;
+        background-repeat: no-repeat;
+        background-size: 100% 100%;
+        left: 70%;
+        top: 25%;
+      }
+      .spora6 {
+        display: block;
+        position: absolute;
+        background: url('../images/spora6.svg');
+        height: 20px;
+        width: 20px;
+        background-repeat: no-repeat;
+        background-size: 100% 100%;
+        left: 40%;
+        top: 35%;
+      }
 }
 
 @media only screen and (min-height: 750px) and (max-height: 800px) {

@@ -318,4 +318,28 @@ draw($(".termo_control").slider("value"));
 
           } );
 
+          $(".indicate_red_button").click(function(){
+            $(".spora1").addClass("hide");
+          });
+
+          $(".con-a-b1").click(function(){
+            $(".spora2").addClass("hide");
+          });
+
+          $(".con-a-b2").click(function(){
+            $(".spora5").addClass("hide");
+          });
+
+          $(".con-v-b1").click(function(){
+            $(".spora3").addClass("hide");
+          });
+
+          $(".con-v-b2").click(function(){
+            $(".spora4").addClass("hide");
+          });
+
+          $(".indicate_green_button").click(function(){
+            $(".spora6").addClass("hide");
+          });
+
 });

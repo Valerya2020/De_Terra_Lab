@@ -1206,7 +1206,103 @@ p {font-family: "GoshaSans-Ultralight";
   top: 10%;
   left: 10%;
 }
+.add:hover {
+opacity: 50%;
+}
 
+.cancel:hover {
+opacity: 50%;
+}
+
+.indicate_green_button:hover {
+opacity: 50%;
+}
+
+.indicate_red_button:hover {
+opacity: 50%;
+}
+
+.con-v-b2:hover {
+opacity: 50%;
+}
+
+.con-v-b1:hover {
+opacity: 50%;
+}
+
+.con-a-b2:hover {
+opacity: 50%;
+}
+
+.con-a-b1:hover {
+opacity: 50%;
+}
+
+
+.spora1 {
+  display: block;
+  position: absolute;
+  background: url('../images/spora1.svg');
+  height: 92px;
+  width: 85px;
+  background-repeat: no-repeat;
+  left: 20%;
+  top: 20%;
+}
+.spora2 {
+  display: block;
+  position: absolute;
+  background: url('../images/spora2.svg');
+  height: 66px;
+  width: 62px;
+  background-repeat: no-repeat;
+  left: 30%;
+  top: 25%;
+}
+.spora3 {
+  display: block;
+  position: absolute;
+  background: url('../images/spora3.svg');
+  height: 50px;
+  width: 50px;
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  left: 50%;
+  top: 55%;
+}
+.spora4 {
+  display: block;
+  position: absolute;
+  background: url('../images/spora4.svg');
+  height: 50px;
+  width: 50px;
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  left: 50%;
+  top: 35%;
+}
+.spora5 {
+  display: block;
+  position: absolute;
+  background: url('../images/spora5.svg');
+  height: 50px;
+  width: 50px;
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  left: 70%;
+  top: 25%;
+}
+.spora6 {
+  display: block;
+  position: absolute;
+  background: url('../images/spora6.svg');
+  height: 50px;
+  width: 50px;
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  left: 40%;
+  top: 35%;
+}
 
 
 
